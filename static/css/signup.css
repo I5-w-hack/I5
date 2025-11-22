@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+/* 전체 박스 컨테이너 */
+.inbox {
+    width: 420px;        /* 575px -> 420px로 축소 */
+    height: auto;        /* 고정 높이(800px) 제거하고 내용물에 맞춤 */
+    min-height: 450px;   /* 최소 높이 설정 */
+    border-radius: 20px; /* 둥근 모서리도 비율에 맞춰 조금 줄임 */
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* 그림자 조금 더 자연스럽게 수정 */
+    overflow: hidden;    /* 오타 수정 over-flow -> overflow */
+    background-color: #FFFFFF;
+}
+
+/* 로고 (좌측 상단 고정) */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0; /* 기본 마진 제거 */
+}
+
+/* 내부 내용 박스 */
+.signup-box {
+    width: 100%;      /* 부모(inbox) 너비를 꽉 채움 */
+    padding: 30px;    /* 패딩 40px -> 30px로 축소 */
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+/* 제목 스타일 */
+.signup-box h2 {
+    color: #62C370;
+    font-size: 32px;  /* 48px -> 32px로 축소 */
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left; /* 제목 가운데 정렬 (선택사항) */
+}
+
+/* 입력 폼 그룹 */
+.form-group {
+    margin-bottom: 15px; /* 간격 20px -> 15px로 축소 */
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;  /* 20px -> 14px로 축소 */
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;    /* 15px -> 12px로 축소 */
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #4E4E4E99;
+    border-radius: 10px; /* 모서리 둥글기 조금 축소 */
+    box-sizing: border-box;
+}
+
+/* 회원가입 버튼 */
+.signup-button {
+    width: 100%;
+    height: 50px;     /* 69px -> 50px로 축소 */
+    padding: 0;       /* 불필요한 패딩 제거 */
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;  /* 32px -> 20px로 축소 */
+    font-weight: 700;
+    background-color: #62C370;
+    border: none;     /* 중복 border 제거 */
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;    /* 텍스트 정중앙 정렬을 위해 추가 */
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button:hover {
+    background-color: #51a35d; /* 마우스 올렸을 때 약간 어둡게 (선택사항) */
+}
+
+/* 로그인 링크 영역 */
+.login-link {
+    text-align: center; /* 가운데 정렬 */
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.login-link span {
+    color: #888;
+}
+
+.login-link a {
+    color: #62C370;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* 에러 메시지 */
+.error-message {
+    color: #e04a4a;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 0;
+    min-height: 12px; /* height -> min-height로 변경하여 유연성 확보 */
+}
